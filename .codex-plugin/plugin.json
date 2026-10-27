@@ -1,0 +1,22 @@
+{
+  "name": "terminal-notify",
+  "version": "1.0.0",
+  "description": "Desktop notifications through your terminal when Codex finishes, asks a question or needs a permission. From the makers of Agent Terminal (https://4nuva.dev/agent-terminal/), which also forwards them to your phone.",
+  "author": { "name": "Agent Terminal", "url": "https://4nuva.dev/agent-terminal/" },
+  "homepage": "https://4nuva.dev/agent-terminal/",
+  "repository": "https://github.com/4nuva/codex-terminal-notify",
+  "license": "MIT",
+  "keywords": ["notifications", "terminal", "osc", "agent-terminal"],
+  "hooks": "./hooks/hooks.json",
+  "interface": {
+    "displayName": "Terminal Notify",
+    "shortDescription": "Desktop notifications through your terminal",
+    "longDescription": "Raises a desktop notification through your terminal when Codex finishes a turn, asks a question or needs a permission. Picks OSC 777, 9 or 99 for your terminal.",
+    "developerName": "Agent Terminal",
+    "category": "Productivity",
+    "capabilities": [],
+    "websiteURL": "https://4nuva.dev/agent-terminal/",
+    "logo": "./assets/icon.png",
+    "composerIcon": "./assets/icon.png"
+  }
+}

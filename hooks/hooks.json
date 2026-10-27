@@ -1,0 +1,28 @@
+{
+  "description": "Desktop notifications through your terminal when Codex finishes, asks a question or needs a permission.",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          { "type": "command", "command": "node \"${PLUGIN_ROOT}/hooks/notify.js\"", "timeout": 5 }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "*",
+        "hooks": [
+          { "type": "command", "command": "node \"${PLUGIN_ROOT}/hooks/notify.js\"", "timeout": 5 }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "request_user_input",
+        "hooks": [
+          { "type": "command", "command": "node \"${PLUGIN_ROOT}/hooks/notify.js\"", "timeout": 5 }
+        ]
+      }
+    ]
+  }
+}
